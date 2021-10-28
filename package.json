@@ -17,7 +17,7 @@
     "react-dom": "17.0.1",
     "react-native": "0.64.2",
     "react-native-web": "0.17.1",
-    "snack-runtime": "0.0.0-alpha.2"
+    "snack-runtime": "0.0.0-alpha.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

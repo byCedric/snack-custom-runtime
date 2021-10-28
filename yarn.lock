@@ -5792,10 +5792,10 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
 
-snack-runtime@0.0.0-alpha.2:
-  version "0.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.2.tgz#4d783bc5404911470bc9c1fa24f320f99fb11049"
-  integrity sha512-O7/sjl9oiT5wLhDMSS9wYBUVZ05sQYvcUR/JReyFTL2cZO+djnGZ2ise7JcaiAlUDAjEO/BGfZt5e28fYVX5HA==
+snack-runtime@0.0.0-alpha.3:
+  version "0.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.3.tgz#d6f15a2eb279e7d57076f36ab9a6feb566c692e3"
+  integrity sha512-Krzat6W5ccdWMmYp/1L/7oIciqq7Jf0k+7ERXyQ/edRBZjqmMXbVPFZPl6S2NvkMc7CKz/oVkc7rwmCWp3/5Xg==
   dependencies:
     "@babel/polyfill" "^7.8.3"
     "@expo/babel-standalone" "1.0.3"
