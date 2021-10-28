@@ -17,15 +17,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.bycedric.snackcustomruntime"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.bycedric.snackcustomruntime"
+      }
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
