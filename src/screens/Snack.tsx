@@ -1,6 +1,6 @@
 import { useIsFocused, useNavigation, useRoute } from '@react-navigation/native';
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Button, Paragraph } from 'react-native-paper';
 import SnackRuntime from 'snack-runtime';
 

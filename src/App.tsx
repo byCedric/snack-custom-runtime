@@ -8,7 +8,7 @@ export function App() {
   return (
     <ThemeProvider>
       <NavigationProvider>
-        <StatusBar style="auto" />
+        <StatusBar style="dark" />
       </NavigationProvider>
     </ThemeProvider>
   );
