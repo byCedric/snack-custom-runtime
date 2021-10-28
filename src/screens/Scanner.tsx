@@ -26,7 +26,7 @@ export function ScannerScreen() {
 
   if (!permission?.granted) {
     return (
-      <View style={[layoutStyle, { marginHorizontal: 32 }]}>
+      <View style={[layoutStyle, { paddingHorizontal: 32 }]}>
         <Text style={iconStyle}>📷</Text>
         <Paragraph style={paragraphStyle}>We need permission to use your camera</Paragraph>
         <Caption style={captionStyle}>
