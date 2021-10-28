@@ -1,12 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Button, Caption, Paragraph } from 'react-native-paper';
 
-import { layoutStyle, paragraphStyle } from '../providers/Theme';
+import { iconStyle, layoutStyle, paragraphStyle } from '../providers/Theme';
 
 export function ExampleScreen() {
   return (
     <View style={layoutStyle}>
+      <Text style={iconStyle}>🌈</Text>
       <Paragraph style={paragraphStyle}>
         These buttons can link to built-in screens.
       </Paragraph>

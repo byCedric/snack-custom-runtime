@@ -5,7 +5,7 @@ import React, { useCallback } from 'react';
 import { Linking, StyleSheet, Text, View } from 'react-native';
 import { Button, Caption, Paragraph } from 'react-native-paper';
 
-import { captionStyle, layoutStyle, linkStyle, paragraphStyle } from '../providers/Theme';
+import { captionStyle, iconStyle, layoutStyle, linkStyle, paragraphStyle } from '../providers/Theme';
 import { RootStackNavigation } from '../types/navigation';
 
 export function ScannerScreen() {
@@ -27,6 +27,7 @@ export function ScannerScreen() {
   if (!permission?.granted) {
     return (
       <View style={[layoutStyle, { marginHorizontal: 32 }]}>
+        <Text style={iconStyle}>📷</Text>
         <Paragraph style={paragraphStyle}>We need permission to use your camera</Paragraph>
         <Caption style={captionStyle}>
           Only then we would be able to scan the QR code you get on{' '}

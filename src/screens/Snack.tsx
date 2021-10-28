@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { Button, Paragraph } from 'react-native-paper';
 import SnackRuntime from 'snack-runtime';
 
-import { paragraphStyle } from '../providers/Theme';
+import { iconStyle, paragraphStyle } from '../providers/Theme';
 import { RootStackNavigation, SnackRoute } from '../types/navigation';
 
 export function SnackScreen() {
@@ -19,6 +19,7 @@ export function SnackScreen() {
       {(isFocused && params.snackUrl) && <SnackRuntime snackUrl={params.snackUrl} />}
       {(isFocused && !params.snackUrl) && (
         <>
+          <Text style={iconStyle}>🔗</Text>
           <Paragraph style={paragraphStyle}>
             Snack URL is required to show a Snack
           </Paragraph>
