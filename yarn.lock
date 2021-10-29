@@ -5373,6 +5373,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-blurhash@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-blurhash/-/react-native-blurhash-1.1.5.tgz#27545afb126347059a3a9324f5c3640a94b1ec53"
+  integrity sha512-RX5lgZ+wwl+XhdgSvR94YpGrPWj5KI6D/9I650Y+TF2W9PDuvJ3gDMz98ispvG2FaUqQrf9LM39pedUxBVWROA==
+
 react-native-codegen@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.6.tgz#b3173faa879cf71bfade8d030f9c4698388f6909"
