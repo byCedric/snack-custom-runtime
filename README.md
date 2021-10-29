@@ -19,7 +19,7 @@
 
 ## 📁 App Structure
 
-This is a demo app containing the Snack Runtime to load and render [Snacks](https://snack.expo.dev).
+This demo app uses [`expo-dev-clients`](https://docs.expo.dev/clients/introduction/) and contains the Snack Runtime to load and render [Snacks](https://snack.expo.dev).
 
 - [`src/assets`](./src/assets) - The default assets necessary to build the app, configured through **[app.json](./app.json)**
 - [`src/providers`](./src/providers) - Containing the theme and navigation providers, used in **[App.tsx](./src/App.tsx)**
@@ -72,7 +72,7 @@ This means that if you want to use [**expo-location**](https://docs.expo.dev/ver
 
 ### Snack and Snackager
 
-Snack uses a node module bundler called "Snackager". Snackager will automatically build a JS-only bundle if you include it in your Snack. In some rare cases this bundling process might fail, usually because it tries to refer React Native internals [like these files](https://github.com/expo/snack/blob/main/snackager/src/bundler/externals.ts#L23-L28).
+Snack uses a node module bundler called "Snackager". Snackager will automatically build a JS-only bundle if you include it in your Snack. In some rare cases this bundling process might fail, usually because it tries to refer React Native internals [like these files](https://github.com/expo/snack/blob/main/snackager/src/bundler/externals.ts#L23-L28). Let us know if you run into Snackager failures.
 
 ## ❌ Common Errors
 
