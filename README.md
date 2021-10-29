@@ -58,6 +58,7 @@ You should be able to add any native modules to the app. Install it, add the req
 
 Here are some Snacks that you can use as inspiration, and load it in the client.
 
+- [**Default Snack**](https://snack.expo.dev/@bycedric/snack-example-default) - Just the default code when creating a new Snack (_JS-only with assets_)
 - [**Moti Snack**](https://snack.expo.dev/@bycedric/snack-example-moti) - The [Hello World code](https://moti.fyi/examples/hello-world) for Moti (_JS-only_)
 - [**Blurhash Snack**](https://snack.expo.dev/@bycedric/snack-example-blurhash) - Simple [React Native Blurhash example](https://github.com/mrousavy/react-native-blurhash) (_custom native code_)
 
