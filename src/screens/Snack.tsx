@@ -9,7 +9,7 @@ import { RootStackNavigation, SnackRoute } from '../types/navigation';
 
 export function SnackScreen() {
   // React Navigation renders all screens in advance, 
-  // we only want to render the camera or snack when it needs to be rendered.
+  // we only want to render the Snack when it needs to be rendered.
   const isFocused = useIsFocused();
   const { goBack } = useNavigation<RootStackNavigation>();
   const { params = {} } = useRoute<SnackRoute>();
