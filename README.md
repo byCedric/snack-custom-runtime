@@ -56,7 +56,7 @@ You should be able to add any native modules to the app. Install it, add the req
 
 ## 🍿 Snack examples
 
-Here are some Snack that you can use as inspiration, and load it in the client.
+Here are some Snacks that you can use as inspiration, and load it in the client.
 
 - https://snack.expo.dev/@bycedric/snack-example-moti - The [Hello World code](https://moti.fyi/examples/hello-world) for Moti 
 
