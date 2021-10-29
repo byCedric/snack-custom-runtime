@@ -9,7 +9,6 @@ import { RootStackNavigation } from '../types/navigation';
 export function HomeScreen() {
   const { navigate } = useNavigation<RootStackNavigation>();
 
-  // You can also add the URL in the Snack route parameters, like `navigate('Snack', { snackUrl: '...' })
   const onNavigateScanner = useCallback(() => navigate('Scanner'), [navigate]);
   const onNavigateExample = useCallback(() => navigate('Example'), [navigate]);
 
