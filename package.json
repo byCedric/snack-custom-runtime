@@ -2,7 +2,7 @@
   "name": "snack-custom-runtime",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "patch-package; npx rimraf node_modules/@unimodules",
+    "postinstall": "patch-package && npx rimraf node_modules/@unimodules",
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
