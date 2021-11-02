@@ -39,5 +39,9 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: 📋 Install dependencies
         run: yarn install --frozen-lockfile --check-files
+      - name: ⚙️ Setup manifest
+        run: |
+          echo $(jq '.expo.android.package = "com.bycedric.snackcustomruntime"' app.json) > app.json
+          echo $(jq '.expo.ios.bundleIdentifier = "com.bycedric.snackcustomruntime"' app.json) > app.json
       - name: 🚀 Start EAS build
         run: eas build --non-interactive --wait --platform=${{ github.event.inputs.platform }} --profile=${{ github.event.inputs.profile }}
