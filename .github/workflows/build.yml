@@ -1,0 +1,43 @@
+name: EAS build
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: Platform to build for (all/android/ios)
+        required: true
+        default: all
+      profile:
+        description: EAS build profile (development/production)
+        required: true
+        default: development
+jobs:
+  build:
+    name: Install and build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗️ Setup repo
+        uses: actions/checkout@v2
+      - name: 🏗️ Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: 🏗️ Setup EAS
+        uses: expo/expo-github-action@v6
+        with:
+          eas-version: latest
+          eas-cache: true
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: 🔎 Find cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: ♻️ Restore cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: 📋 Install dependencies
+        run: yarn install --frozen-lockfile --check-files
+      - name: 🚀 Start EAS build
+        run: eas build --non-interactive --wait --platform=${{ github.event.inputs.platform }} --profile=${{ github.event.inputs.profile }}
