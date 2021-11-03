@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { Button, Caption, Paragraph } from 'react-native-paper';
 
 import { iconStyle, layoutStyle, paragraphStyle } from '../providers/Theme';
@@ -7,7 +7,7 @@ import { iconStyle, layoutStyle, paragraphStyle } from '../providers/Theme';
 export function ExampleScreen() {
   return (
     <View style={layoutStyle}>
-      <Text style={iconStyle}>🌈</Text>
+      <Image source={require('../assets/nyan-cat.gif')} style={{ marginBottom: 32 }} />
       <Paragraph style={paragraphStyle}>
         These buttons can link to built-in screens.
       </Paragraph>
