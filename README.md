@@ -94,7 +94,7 @@ registerSnackAssetSourceTransformer();
 import { resolveSnackAssetSource } from 'snack-runtime';
 import { setCustomSourceTransformer } from 'react-native/Libraries/Image/resolveAssetSource';
 
-setCustomSourceTransformer((resolver: any) => {
+setCustomSourceTransformer((resolver) => {
   const snackAsset = resolveSnackAssetSource(resolver.asset);
   if (snackAsset) {
     return snackAsset;
