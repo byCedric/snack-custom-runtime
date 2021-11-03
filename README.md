@@ -78,7 +78,33 @@ Snack uses a node module bundler called "Snackager". Snackager will automaticall
 
 ## ❌ Common Errors
 
-_If anything comes up during development or testing, it will be added here_
+### Snack assets aren't being resolved
+
+If Snack assets aren't loading, that's because those assets are loaded from Snack's own CDN. React Native doesn't know about this CDN, it needs to be registered before you can use Snack assets.
+
+This snippet should be placed in the `index.js` file. If you already have a custom source transformer, you have to add it to your own script instead.
+
+```js
+// Allow assets to be resolved from the Snack CDN
+import { registerSnackAssetSourceTransformer } from 'snack-runtime';
+
+registerSnackAssetSourceTransformer();
+
+// Or, add the Snack CDN as one of other strategies to resolve assets
+import { resolveSnackAssetSource } from 'snack-runtime';
+import { setCustomSourceTransformer } from 'react-native/Libraries/Image/resolveAssetSource';
+
+setCustomSourceTransformer((resolver: any) => {
+  const snackAsset = resolveSnackAssetSource(resolver.asset);
+  if (snackAsset) {
+    return snackAsset;
+  }
+
+  // ... custom resolve logic
+
+  return resolver.defaultAsset();
+});
+```
 
 <div align="center">
   <br />
