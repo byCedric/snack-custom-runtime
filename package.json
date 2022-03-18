@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "patch-package && npx rimraf node_modules/@unimodules",
-    "start": "react-native start",
+    "start": "expo start --dev-client",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
@@ -22,7 +22,7 @@
     "expo-updates": "~0.10.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-native": "0.64.2",
+    "react-native": "0.64.3",
     "react-native-blurhash": "^1.1.5",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-paper": "^4.9.2",
@@ -30,7 +30,7 @@
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.8.0",
     "react-native-web": "0.17.1",
-    "snack-runtime": "0.0.0-alpha.5"
+    "snack-runtime": "0.0.0-alpha.7"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

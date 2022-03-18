@@ -5459,10 +5459,10 @@ react-native-web@0.17.1:
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
 
-react-native@0.64.2:
-  version "0.64.2"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.2.tgz#233b6ed84ac4749c8bc2a2d6cf63577a1c437d18"
-  integrity sha512-Ty/fFHld9DcYsFZujXYdeVjEhvSeQcwuTGXezyoOkxfiGEGrpL/uwUZvMzwShnU4zbbTKDu2PAm/uwuOittRGA==
+react-native@0.64.3:
+  version "0.64.3"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.3.tgz#40db6385963b4b17325f9cc86dd19132394b03fc"
+  integrity sha512-2OEU74U0Ek1/WeBzPbg6XDsCfjF/9fhrNX/5TFgEiBKd5mNc9LOZ/OlMmkb7iues/ZZ/oc51SbEfLRQdcW0fVw==
   dependencies:
     "@jest/create-cache-key-function" "^26.5.0"
     "@react-native-community/cli" "^5.0.1-alpha.1"
@@ -5956,10 +5956,10 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
 
-snack-runtime@0.0.0-alpha.5:
-  version "0.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.5.tgz#bec6020369c19957f54c8f3e75c3a1de3fc319f5"
-  integrity sha512-4b2ZAMv3GKR3CVwWYlgl6r//UK9TB+Mao/6K2SYmnPdQ/fHf/hG4chNAQZ9s82OLSWceAAFKjVUvRZjXBJxy+Q==
+snack-runtime@0.0.0-alpha.7:
+  version "0.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.7.tgz#3c431fe1aee2bfdf857b3d7867ac2b150b110fae"
+  integrity sha512-qUBV0gHUGYj6Cep09AhpDigMzLOTzyGdz1ltW4H2FGu6S+UmvpLqdtrsRPOCL01yXXeYddWry0nvSnUZHIu2Ow==
   dependencies:
     "@babel/polyfill" "^7.8.3"
     "@expo/babel-standalone" "1.0.3"
@@ -5981,14 +5981,7 @@ snack-runtime@0.0.0-alpha.5:
     path "^0.12.7"
     prop-types "^15.7.2"
     pubnub "^4.23.0"
-    react "17.0.1"
-    react-dom "17.0.1"
-    react-native "0.64.2"
-    react-native-gesture-handler "~1.10.2"
-    react-native-reanimated "~2.2.0"
-    react-native-safe-area-context "3.3.2"
     react-native-view-shot "3.1.2"
-    react-native-web "0.17.1"
     source-map "0.6.1"
 
 snapdragon-node@^2.0.1:
