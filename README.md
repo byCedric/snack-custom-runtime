@@ -106,6 +106,12 @@ setCustomSourceTransformer((resolver) => {
 });
 ```
 
+### Buffer is undefined
+
+If you run into this error when building the app, it's likely caused by jsesc being executed in React Native without Buffer being available.
+
+In this case, add `buffer` as dependency and apply the patch in **[patches/jsesc%2B2.5.2.patch](./patches/jsesc%2B2.5.2.patch)**
+
 <div align="center">
   <br />
   with&nbsp;❤️&nbsp;&nbsp;<strong>Expo</strong>
