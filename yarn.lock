@@ -1055,11 +1055,6 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
-"@expo/babel-standalone@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/babel-standalone/-/babel-standalone-1.0.3.tgz#21e31697729b00f6f5b50b304b0baf4e1139149e"
-  integrity sha512-UlF/Kj7roqOUm5cZVW3dPgKUTOX/asP4qjhd7636UKvcSw9j354T3lpOdAaCAqi8CsX5ddfNRx3B7DjQp6//2A==
-
 "@expo/config-plugins@3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-3.1.0.tgz#0752ff33c5eab21cf42034a44e79df97f0f867f8"
@@ -1995,7 +1990,7 @@ base-64@^0.1.0:
   resolved "https://registry.yarnpkg.com/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
   integrity sha1-eAqZyE59YAJgNhURxId2E78k9rs=
 
-base64-js@*, base64-js@^1.1.2, base64-js@^1.2.3, base64-js@^1.3.0, base64-js@^1.5.1:
+base64-js@*, base64-js@^1.1.2, base64-js@^1.2.3, base64-js@^1.3.0, base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
@@ -2108,6 +2103,14 @@ buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
+
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -2948,6 +2951,14 @@ expo-modules-core@~0.4.4, expo-modules-core@~0.4.5, expo-modules-core@~0.4.6:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
+expo-modules-core@~0.4.7, expo-modules-core@~0.4.8:
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-0.4.10.tgz#6c7e7e211b3056fc23a462e9faea88cc7653fe9b"
+  integrity sha512-uCZA3QzF0syRaHwYY99iaNhnye4vSQGsJ/y6IAiesXdbeVahWibX4G1KoKNPUyNsKXIM4tqA+4yByUSvJe4AAw==
+  dependencies:
+    compare-versions "^3.4.0"
+    invariant "^2.2.4"
+
 expo-random@*, expo-random@~12.0.0, expo-random@~12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/expo-random/-/expo-random-12.0.1.tgz#d36706b744c27c1a145f0510f57093a6541aec5e"
@@ -2965,6 +2976,15 @@ expo-splash-screen@~0.13.3:
     "@expo/prebuild-config" "^3.0.6"
     expo-modules-core "~0.4.4"
 
+expo-splash-screen@~0.13.5:
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.13.5.tgz#ece76c092f2ce88e4660a70e532ed47909a01ddd"
+  integrity sha512-L/L0XlmmxSoyuooCVvbPBO4xUF9kAs+F0+fML3pf7miBOnTd/v9j5riKSmaDthNtM4AarXxgi0AXzSHQ1M3rZg==
+  dependencies:
+    "@expo/configure-splash-screen" "^0.6.0"
+    "@expo/prebuild-config" "^3.0.6"
+    expo-modules-core "~0.4.7"
+
 expo-status-bar@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.1.0.tgz#b1015a69c8563b7cadcb5b6c726227397610725d"
@@ -2979,6 +2999,22 @@ expo-updates-interface@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.4.0.tgz#20961f2cb4bd068a74c29434affa08791dbaa240"
   integrity sha512-EUJaLnDAePikGEQT8w6gjCY3m/dlGgjZKVn5XBaxZMkHzOy3PDQo6QOcK/bcMdkA3CyNrvo6NCe+/7RHrgmK4A==
+
+expo-updates@~0.10.15:
+  version "0.10.15"
+  resolved "https://registry.yarnpkg.com/expo-updates/-/expo-updates-0.10.15.tgz#1fcfd78ff615307809ad38a3d37eaa67f7268282"
+  integrity sha512-GHh1e0BwJY7aT+huGfneXpMhPKKkDIOBqCWyZDyTo7AWLj2C2ZCvgT2D9LWyl6v9WwxMEfO94RaYCQaayD/rfw==
+  dependencies:
+    "@expo/config" "^5.0.9"
+    "@expo/config-plugins" "^4.0.2"
+    "@expo/metro-config" "~0.1.84"
+    expo-manifests "~0.2.2"
+    expo-modules-core "~0.4.8"
+    expo-structured-headers "~2.0.0"
+    expo-updates-interface "~0.4.0"
+    fbemitter "^2.1.1"
+    resolve-from "^5.0.0"
+    uuid "^3.4.0"
 
 expo-updates@~0.10.5:
   version "0.10.5"
@@ -3541,6 +3577,11 @@ iconv-lite@^0.6.2:
   integrity sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
+
+ieee754@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
 image-size@^0.6.0:
   version "0.6.3"
@@ -5956,13 +5997,17 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
 
-snack-runtime@0.0.0-alpha.7:
-  version "0.0.0-alpha.7"
-  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.7.tgz#3c431fe1aee2bfdf857b3d7867ac2b150b110fae"
-  integrity sha512-qUBV0gHUGYj6Cep09AhpDigMzLOTzyGdz1ltW4H2FGu6S+UmvpLqdtrsRPOCL01yXXeYddWry0nvSnUZHIu2Ow==
+snack-babel-standalone@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/snack-babel-standalone/-/snack-babel-standalone-1.0.0.tgz#e199ed6fdb824c257c781a6bfe07c59cd1ba88d1"
+  integrity sha512-5yJUhDfu2LsCazDMhtjb9noXg5rOnBXZMtXQOQB+NiAkzZVL5TUBqjYPpoMqOOorjpLpMopRAEXk5cLSoaZYQQ==
+
+snack-runtime@0.0.0-alpha.9:
+  version "0.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.0.0-alpha.9.tgz#d85a045d03738e4c1127f69d25a5cbc0e55dee93"
+  integrity sha512-PBYWhDO9Iz9w4qm6fAzFSNyRmY8Mica/msu3HouY3pc85t0Qiml/uZpamFr/LkCY+3LQ8HYalS1EYl8MtpCpbg==
   dependencies:
     "@babel/polyfill" "^7.8.3"
-    "@expo/babel-standalone" "1.0.3"
     "@expo/vector-icons" "^12.0.0"
     "@react-native-async-storage/async-storage" "~1.15.0"
     diff "^5.0.0"
@@ -5982,6 +6027,7 @@ snack-runtime@0.0.0-alpha.7:
     prop-types "^15.7.2"
     pubnub "^4.23.0"
     react-native-view-shot "3.1.2"
+    snack-babel-standalone "~1.0.0"
     source-map "0.6.1"
 
 snapdragon-node@^2.0.1:

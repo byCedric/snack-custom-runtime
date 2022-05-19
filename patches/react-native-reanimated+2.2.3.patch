@@ -1,12 +1,12 @@
-diff --git a/node_modules/react-native-reanimated/plugin.js b/node_modules/react-native-reanimated/plugin.js
+diff --git a/node_modules/react-native-reanimated/plugin-standalone.js b/node_modules/react-native-reanimated/plugin-standalone.js
 index 1bf9f1d..25e1c51 100644
---- a/node_modules/react-native-reanimated/plugin.js
-+++ b/node_modules/react-native-reanimated/plugin.js
+--- a/node_modules/react-native-reanimated/plugin-standalone.js
++++ b/node_modules/react-native-reanimated/plugin-standalone.js
 @@ -1,10 +1,7 @@
  'use strict';
  
 -const generate = require('@babel/generator').default;
-+const { generate, traverse, parse, visitors, getPlugin } = require('@expo/babel-standalone');
++const { generate, traverse, parse, visitors, getPlugin } = require('snack-babel-standalone');
  const hash = require('string-hash-64');
 -const { visitors } = require('@babel/traverse');
 -const traverse = require('@babel/traverse').default;
