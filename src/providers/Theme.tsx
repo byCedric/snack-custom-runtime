@@ -1,5 +1,6 @@
+import Constants from 'expo-constants';
 import React, { PropsWithChildren } from 'react';
-import { addons, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { DefaultTheme, Provider } from 'react-native-paper';
 
 type Props = PropsWithChildren<{}>;
@@ -37,6 +38,11 @@ const styles = StyleSheet.create({
   linkStyle: {
     color: '#4630eb',
   },
+  notificationStyle: {
+    paddingTop: Constants.statusBarHeight,
+    margin: 16,
+    textAlign: 'center',
+  },
 });
 
 export const layoutStyle = styles.layoutStyle;
@@ -44,3 +50,4 @@ export const iconStyle = styles.iconStyle;
 export const paragraphStyle = styles.paragraphStyle;
 export const captionStyle = styles.captionStyle;
 export const linkStyle = styles.linkStyle;
+export const notificationStyle = styles.notificationStyle;
