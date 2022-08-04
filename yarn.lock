@@ -3433,7 +3433,7 @@ expo-updates@~0.14.3:
     resolve-from "^5.0.0"
     uuid "^3.4.0"
 
-expo@^46.0.1:
+expo@~46.0.2:
   version "46.0.2"
   resolved "https://registry.yarnpkg.com/expo/-/expo-46.0.2.tgz#6ee13b28b8d36dd224402575f523b37d8f153101"
   integrity sha512-E7MEzsWnxUAVolFGxBGxI1UazQYPvRx9c+2RlRlr6Kpp4BTsIuRZiYgHywJe9jZVw9csc4C4aL3TYcKg+3lehg==
