@@ -4,10 +4,9 @@
   "scripts": {
     "postinstall": "patch-package",
     "start": "expo start --dev-client",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
@@ -36,7 +35,7 @@
     "react-native-screens": "~3.20.0",
     "react-native-view-shot": "3.5.0",
     "react-native-web": "~0.18.10",
-    "snack-runtime": "0.3.0-rc.1"
+    "snack-runtime": "0.3.0-rc.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

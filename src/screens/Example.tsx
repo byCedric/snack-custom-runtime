@@ -10,7 +10,6 @@ export function ExampleScreen() {
   const { navigate } = useNavigation<RootStackNavigation>();
 
   const onDefaultSnack = useCallback(() => navigate('Snack', { snackUrl: 'https://snack.expo.dev/@bycedric/snack-example-default' }), [navigate]);
-  const onMotiSnack = useCallback(() => navigate('Snack', { snackUrl: 'https://snack.expo.dev/@bycedric/snack-example-moti' }), [navigate]);
   const onBlurhashSnack = useCallback(() => navigate('Snack', { snackUrl: 'https://exp.host/@bycedric/snack-example-blurhash' }), [navigate]);
 
   return (
@@ -24,7 +23,6 @@ export function ExampleScreen() {
       </Caption>
       <View style={{ marginTop: 32 }}>
         <Button onPress={onDefaultSnack}>Open default snack</Button>
-        <Button onPress={onMotiSnack}>Open Moti snack</Button>
         <Button onPress={onBlurhashSnack}>Open Blurhash snack</Button>
       </View>
     </View>

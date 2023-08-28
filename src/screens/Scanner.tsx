@@ -9,7 +9,7 @@ import { captionStyle, iconStyle, layoutStyle, linkStyle, paragraphStyle } from 
 import { RootStackNavigation } from '../types/navigation';
 
 export function ScannerScreen() {
-  // React Navigation renders all screens in advance, 
+  // React Navigation renders all screens in advance,
   // we only want to render the camera when it needs to be rendered.
   const isFocused = useIsFocused();
   const { navigate } = useNavigation<RootStackNavigation>();

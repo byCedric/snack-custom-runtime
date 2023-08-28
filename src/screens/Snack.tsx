@@ -2,13 +2,13 @@ import { useIsFocused, useNavigation, useRoute } from '@react-navigation/native'
 import React from 'react';
 import { Text, View } from 'react-native';
 import { Button, Paragraph } from 'react-native-paper';
-import SnackRuntime from 'snack-runtime';
+import { SnackRuntime } from 'snack-runtime';
 
 import { iconStyle, paragraphStyle } from '../providers/Theme';
 import { RootStackNavigation, SnackRoute } from '../types/navigation';
 
 export function SnackScreen() {
-  // React Navigation renders all screens in advance, 
+  // React Navigation renders all screens in advance,
   // we only want to render the Snack when it needs to be rendered.
   const isFocused = useIsFocused();
   const { goBack } = useNavigation<RootStackNavigation>();

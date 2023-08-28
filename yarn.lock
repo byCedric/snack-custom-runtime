@@ -4255,6 +4255,11 @@ inherits@2, inherits@2.0.4, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+inherits@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+  integrity sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==
+
 ini@~1.3.0:
   version "1.3.8"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
@@ -6007,6 +6012,14 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -6098,6 +6111,11 @@ process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+
+process@^0.11.1:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
 progress@2.0.3:
   version "2.0.3"
@@ -6905,10 +6923,10 @@ snack-require-context@^0.1.0:
   resolved "https://registry.yarnpkg.com/snack-require-context/-/snack-require-context-0.1.0.tgz#dd48f6e2c6b7299b7d7f34c873220cb80a8a42a7"
   integrity sha512-A3wTu9vHquHOP5I7T1WBfO51LuJaXA1htg4WurdmhePZr3CizS4XSwX5dh2fwc92U5R70W11AzoVvOg/Xqa+Nw==
 
-snack-runtime@0.3.0-rc.1:
-  version "0.3.0-rc.1"
-  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.3.0-rc.1.tgz#a75746fa7f37a1f92d10e77676d3327cb17d1641"
-  integrity sha512-mZu37p6hylHIIX61Xm+0o2hkfq4+KkvQTo1VpmoeVbs/W8wYkyYinML3LfBPSEVhrvVfSKQyDs3EyAEUiGpaXw==
+snack-runtime@0.3.0-rc.3:
+  version "0.3.0-rc.3"
+  resolved "https://registry.yarnpkg.com/snack-runtime/-/snack-runtime-0.3.0-rc.3.tgz#39383e2167276d2484dacf06eb93363aa5609e4e"
+  integrity sha512-61W3c2OiCLVM0QZy/yhxH62Vl8ZWwd8UNrBcXdZm7Rs3ex7Fvde6TEFGM6HSg0klMvxEOBxFM06MnTtKGQwYGg==
   dependencies:
     "@babel/polyfill" "^7.8.3"
     "@react-native-async-storage/async-storage" "1.17.11"
@@ -6916,6 +6934,7 @@ snack-runtime@0.3.0-rc.1:
     canvaskit-wasm "0.38.0"
     diff "^5.0.0"
     escape-string-regexp "^5.0.0"
+    path "^0.12.7"
     pubnub "^7.2.0"
     snack-babel-standalone "^2.2.2"
     snack-require-context "^0.1.0"
@@ -7626,6 +7645,13 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+util@^0.10.3:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
+  integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
+  dependencies:
+    inherits "2.0.3"
 
 utils-merge@1.0.1:
   version "1.0.1"
