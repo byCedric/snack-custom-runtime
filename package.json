@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",
+    "assert": "^2.1.0",
     "buffer": "^6.0.3",
     "expo": "~50.0.17",
     "expo-asset": "~9.0.2",

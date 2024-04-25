@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { addons, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { DefaultTheme, Provider } from 'react-native-paper';
 
 type Props = PropsWithChildren<{}>;

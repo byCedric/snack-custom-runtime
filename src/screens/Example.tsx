@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useCallback } from 'react';
 import { Image, View } from 'react-native';
 import { Button, Caption, Paragraph } from 'react-native-paper';
+import { createRuntimeUrl } from 'snack-runtime';
 
 import { layoutStyle, paragraphStyle } from '../providers/Theme';
 import { RootStackNavigation } from '../types/navigation';
@@ -9,8 +10,8 @@ import { RootStackNavigation } from '../types/navigation';
 export function ExampleScreen() {
   const { navigate } = useNavigation<RootStackNavigation>();
 
-  const onDefaultSnack = useCallback(() => navigate('Snack', { snackUrl: 'https://snack.expo.dev/@bycedric/snack-example-default' }), [navigate]);
-  const onBlurhashSnack = useCallback(() => navigate('Snack', { snackUrl: 'https://exp.host/@bycedric/snack-example-blurhash' }), [navigate]);
+  const onDefaultSnack = useCallback(() => navigate('Snack', { snackUrl: createRuntimeUrl({ sdkVersion: '50.0.0', snack: '@bycedric/snack-example-default' }) }), [navigate]);
+  const onBlurhashSnack = useCallback(() => navigate('Snack', { snackUrl: createRuntimeUrl({ sdkVersion: '50.0.0', snack: '@bycedric/snack-example-blurhash' }) }), [navigate]);
 
   return (
     <View style={layoutStyle}>
