@@ -1,6 +1,5 @@
 import { useIsFocused, useNavigation } from '@react-navigation/native';
-import * as BarCodeScanner from 'expo-barcode-scanner';
-import { Camera } from 'expo-camera';
+import { type BarcodeScanningResult, CameraView, useCameraPermissions } from 'expo-camera';
 import React, { useCallback } from 'react';
 import { Linking, StyleSheet, Text, View } from 'react-native';
 import { Button, Caption, Paragraph } from 'react-native-paper';
@@ -13,10 +12,10 @@ export function ScannerScreen() {
   // we only want to render the camera when it needs to be rendered.
   const isFocused = useIsFocused();
   const { navigate } = useNavigation<RootStackNavigation>();
-  const [permission, requestPermission] = Camera.useCameraPermissions();
+  const [permission, requestPermission] = useCameraPermissions();
 
   const onSnackOpen = useCallback(() => Linking.openURL('https://snack.expo.dev'), []);
-  const onCameraBarCode = useCallback(({ data: snackUrl }: BarCodeScanner.BarCodeScannerResult) => {
+  const onCameraBarCode = useCallback(({ data: snackUrl }: BarcodeScanningResult) => {
     // Validation can be better, including a message like "Seems like you scanned a beer bottle".
     // But, this is just to make sure we don't load anything random
     if (snackUrl.includes('exp.host')) {
@@ -41,11 +40,11 @@ export function ScannerScreen() {
   return (
     <View style={[layoutStyle, { justifyContent: 'flex-end' }]}>
       {isFocused && (
-        <Camera
+        <CameraView
           style={StyleSheet.absoluteFill}
-          onBarCodeScanned={onCameraBarCode}
-          barCodeScannerSettings={{
-            barCodeTypes: [BarCodeScanner.Constants.BarCodeType.qr],
+          onBarcodeScanned={onCameraBarCode}
+          barcodeScannerSettings={{
+            barcodeTypes: ['qr'],
           }}
         />
       )}
